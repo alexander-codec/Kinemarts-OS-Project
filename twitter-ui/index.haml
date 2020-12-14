@@ -1,0 +1,64 @@
+// https://dribbble.com/shots/1925161-Tweetbot-for-Mac-Redesign/attachments/331070
+
+.app
+  .left
+    .left-top
+      .buttons
+        .circle
+        .circle
+        .circle
+    .menu
+      .profile
+        %img{:src => "http://lorempixel.com/40/40/people/"}/
+        %p John Doe
+        %p @johndoe
+      .row.active
+        %p <i class="fa fa-comment-o"></i> Tweets
+      .row
+        %p <i class="fa fa-at"></i> Mentions
+      .row
+        %p <i class="fa fa-envelope-o"></i> Messages
+      .row
+        %p <i class="fa fa-star"></i> Favorites
+      .row
+        %p <i class="fa fa-search"></i> Search
+      .row
+        %p <i class="fa fa-user"></i> Profile
+  .right
+    .right-top
+      .title Timeline
+    .feed
+      .post
+        %img{:src => "http://lorempixel.com/50/50/people/"}/
+        %p.time
+          43m
+        %p.name
+          Steve Jobs
+          %small @stevejobs
+        %p.text
+          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+      
+      %hr/
+      
+      .post
+        %img{:src => "http://lorempixel.com/50/50/people/"}/
+        %p.time
+          53m
+        %p.name
+          Bill Gates
+          %small @billgates
+        %p.text
+          Habitant morbi tristique senectus et netus et malesuada fames ac turpis
+      
+      %hr/
+      
+      .post
+        %img{:src => "http://lorempixel.com/50/50/people/"}/
+        %p.time
+          2h
+        %p.name
+          Johnny Bravo
+          %small @johnnybravo
+        %p.text
+          bla bla bla bla hello bla bla bla bla bla bla.
+      %hr/

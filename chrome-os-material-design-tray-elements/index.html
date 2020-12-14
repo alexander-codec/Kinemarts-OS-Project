@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Chrome OS Material Design: Tray Elements</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+  
+  <link rel='stylesheet prefetch' href='https://storage.googleapis.com/code.getmdl.io/1.0.5/material.blue-red.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel='stylesheet prefetch' href='https://rawgit.com/richiksc/flex-css/master/dist/flex.min.prefixed.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="mdl-card volume-slider flex-vertical mdl-shadow--2dp" id="js-volume-slider">
+  <div class="row row--ic-button">
+    <i class="material-icons md-light mrgn-s">cast</i>
+    <span class="grow mrgn-s">
+      <input type="range" class="mdl-slider mdl-js-slider" min="0" max="100" value="80"/>
+    </span>
+    <button class="mdl-button mdl-js-button mdl-button--icon" onclick="expand();">
+      <i class="material-icons md-light">
+        keyboard_arrow_down
+      </i>
+    </button>
+  </div>
+  <div class="row row--ic-button">
+    <i class="material-icons md-light mrgn-s">volume_up</i>
+    <span class="grow mrgn-l">
+      <input type="range" class="mdl-slider mdl-js-slider" min="0" max="100" value="80"/>
+    </span>
+  </div>
+</div>
+<div class="mdl-card tray-menu flex vertical mdl-shadow--2dp">
+  <div class="row lg">
+    <div class="avatar"></div>
+    <div class="details grow">
+      <div>Ali Connors</div>
+      <div class="small">aliconnors@gmail.com</div>
+    </div>
+    <button class="mdl-button mdl-js-button">Sign Out</button>
+
+  </div>
+  <div class="row clickable">
+    <i class="material-icons mrgn">keyboard</i>
+    <span class="grow">US keyboard</span>
+    <i class="material-icons">chevron_right</i>
+  </div>
+  <div class="row clickable">
+    <i class="material-icons mrgn">signal_wifi_4_bar</i>
+    <span class="grow">GoogleGuest</span>
+    <i class="material-icons">chevron_right</i>
+  </div>
+  <div class="row clickable">
+    <i class="material-icons mrgn">bluetooth_disabled</i>
+    <span class="grow">Bluetooth disabled</span>
+    <i class="material-icons">chevron_right</i>
+  </div>
+  <div class="row clickable">
+    <i class="material-icons mrgn">cast</i>
+    <span class="grow">Cast devices available</span>
+    <i class="material-icons">chevron_right</i>
+  </div>
+  <div class="row row--ic-button" id="volume-audio">
+    <i class="material-icons mrgn">volume_up</i>
+    <span class="grow mrgn-s">
+      <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="80" tabindex="0"/>
+    </span>
+    <button class="mdl-button mdl-js-button mdl-button--icon">
+      <i class="material-icons">chevron_right</i>
+    </button>
+  </div>
+  <div class="row clickable" id="row-settings">
+    <i class="material-icons mrgn">settings</i>
+    <span class="grow">Settings</span>
+    <span class="small"><span class="secondary">100% - </span>9 hrs left</span>
+    <i class="material-icons">battery_std</i>
+  </div>
+  <div class="row final">
+    <span class="grow secondary small" id="date">Date</span>
+    <button class="mdl-button mdl-js-button mdl-button--icon">
+      <i class="material-icons">help_outline</i>
+    </button>
+    <button class="mdl-button mdl-js-button mdl-button--icon">
+      <i class="material-icons">power_settings_new</i>
+    </button>
+    <button class="mdl-button mdl-js-button mdl-button--icon">
+      <i class="material-icons">lock_outline</i>
+    </button>
+  </div>
+</div>
+<div class="mdl-card mdl-shadow--2dp pane">
+  
+    <div class="toolbar">
+      <button class="mdl-button mdl-js-button mdl-button--icon mrgn-s">
+        <i class="material-icons">arrow_back</i>
+      </button>
+      <div class="title grow">Wi-Fi</div>
+      <button class="mdl-button mdl-js-button mdl-button--icon mrgn-s">
+        <i class="material-icons">info</i>
+      </button>
+      <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+        <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+        <span class="mdl-switch__label"></span>
+      </label>
+    </div> 
+    <!-- End of Toolbar -->
+  <div class="row">
+    <i class="material-icons mrgn">signal_wifi_4_bar</i>
+    <span class="grow mrgn-s">GoogleGuest</span>
+  </div>
+  <div class="row">
+    <i class="material-icons mrgn">wifi_lock</i>
+    <span class="grow mrgn-s">TP-LINK</span>
+  </div>
+  <div class="row noborder">
+    <i class="material-icons mrgn">network_wifi</i>
+    <span class="grow mrgn-s">CityPublicWifi</span>
+  </div>
+  <div class="row nohover grow"></div>
+  <div class="row nohover">
+    <div class="grow"></div>
+    <button class="mdl-button mdl-js-button mdl-button--primary">MORE SETTINGS</button>
+  </div>
+</div>
+  <script src='https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

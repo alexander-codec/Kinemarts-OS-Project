@@ -1,0 +1,230 @@
+@import "compass";
+//colors
+$md_blue: #2196f3;
+$md-ic__light: rgba(255, 255, 255, 1);
+$md-bg__light: #fff;
+$md-text: rgba(0,0,0,0.87);
+$md-default: #eee;
+$md-ic__dark: rgba(0,0,0,0.54);
+$avatar-text: rgba(255,255,255,0.7);
+$md-selected: #f2f2f2;
+$md-bg__dark: #263238;
+
+//fonts
+$font_0: "Roboto";
+
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	width: 100%;
+	height: 150%;
+	margin: 0;
+  padding: 40px;
+  padding-right: 0;
+	background-color: $md_blue;
+	font-family: $font_0;
+	font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  
+	@include box-sizing(border-box);
+	@include user-select(none);
+}
+
+// General style rules
+
+.row {
+	height: 56px;
+	padding: 0 16px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	&.row--ic-button {
+		padding-right: 12px;
+	}
+  &.clickable {
+		cursor: pointer;
+    
+    &:hover {
+      background-color: $md-selected;
+    }
+		&:active {
+			background-color: $md-default;
+		}
+	}
+}
+
+.mrgn-s {
+	margin-right: 16px;
+}
+
+.mrgn {
+	margin-right: 32px;
+}
+
+.mrgn-l {
+  margin-right: 48px;
+}
+
+.grow {
+	flex-grow: 1;
+}
+
+.material-icons {
+  color: $md-ic__dark;
+  &.md-light {
+    color: $md-ic__light;
+  }
+}
+
+
+// Zero margin on slider
+
+input[type=range].is-upgraded {
+	margin: 0;
+	width: 100%;
+}
+
+.mdl-slider__background-flex {
+	margin: 0;
+	width: 100%;
+}
+
+
+// Tray menu
+
+.tray-menu {
+	width: 300px;
+	margin: 40px 0;
+	color: $md-text;
+ 
+ 
+	.row {
+		border-bottom: 1px solid $md-default;
+		&.lg {
+			height: 72px;
+		}
+	}
+  
+	.avatar {
+		background-color: $md_blue;
+		height: 40px;
+		width: 40px;
+		border-radius: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 16px;
+		&:before {
+			content: "A";
+			font-size: 20px;
+			text-align: center;
+			color: $avatar-text;
+		}
+	}
+	.small {
+		font-size: 12px;
+	}
+	.secondary {
+		color: $md-ic__dark;
+	}
+	.final {
+		background-color: $md-default;
+		border-bottom: none;
+    .mdl-button--icon:not(:last-child) {
+      margin-right: 8px;
+    }
+	}
+	.details div:last-child {
+		text-overflow: ellipsis;
+	}
+}
+
+
+// Volume slider
+
+.volume-slider {
+	background-color: $md-bg__dark;
+	width: 300px;
+	min-height: 56px;
+  height: 56px;
+	flex-direction: column;
+  overflow: hidden;
+  transition: height 0.2s ease;
+  
+  &.active {
+    height: 112px;
+  }
+  
+  .row {
+    flex-shrink: 0;
+  }
+}
+
+
+// Delight the user
+#row-settings .mrgn {
+  transition: transform 0.2s ease-out;
+}
+
+#row-settings:hover .mrgn {
+	transform: rotate(90deg);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  transition: width 0.5s ease;
+}
+
+::-webkit-scrollbar:hover {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2196F3;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1976D2;
+}
+
+.toolbar {
+  height: 64px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  background-color: $md-default;
+  border-bottom: 1px solid $md-default;
+  
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  .mdl-switch {
+    width: 40px;
+  }
+}
+
+.pane {
+  width: 300px;
+  height: 400px;
+  .row {
+    cursor: pointer;
+    border-bottom: 1px solid $md-default;
+    &.noborder {
+      border-bottom: none;
+    }
+    &:not(.nohover):hover {
+      background-color: $md-selected;
+    }
+  }
+}
+
+.mdl-card {
+  margin-right: 40px;
+}

@@ -1,0 +1,17 @@
+{
+  "main": "index.html",
+  "name": "Kinemarts OS",
+  "description": "demo app of node-webkit",
+  "version": "0.1.0",
+  "keywords": [ "demo", "node-webkit" ],
+  "window": {
+	"title": "Kinemarts OS",
+    "icon": "icon.png",
+    "toolbar": true,
+    "frame": false,
+    "fullscreen": true
+  },
+  "webkit": {
+    "plugin": true
+  }
+}

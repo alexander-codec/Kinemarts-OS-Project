@@ -1,0 +1,155 @@
+body {
+  background: url(https://9to5mac.files.wordpress.com/2014/08/yosemite.jpg);
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+}
+body *,
+body *:before,
+body *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+hr {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  width: 95%;
+  margin: 0 auto;
+}
+i {
+  margin: 0 5px 0 0;
+}
+p {
+  font-size: 14px;
+  margin: 0;
+  padding: 10px 20px;
+}
+.app {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+  margin: 20px 100px;
+  width: 750px;
+  box-shadow: 0 0 20px #333;
+  display: inline;
+}
+.left {
+  float: left;
+  width: 30%;
+  color: #FFF;
+}
+.left-top {
+  height: 40px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  padding: 14px 15px;
+  margin: 0;
+}
+.buttons {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.buttons .circle {
+  float: left;
+  margin: 0 10px 0 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.buttons .circle:nth-child(1) {
+  background: #FF5E51;
+}
+.buttons .circle:nth-child(1):hover {
+  background: #ea1100;
+}
+.buttons .circle:nth-child(2) {
+  background: #FEBB00;
+}
+.buttons .circle:nth-child(2):hover {
+  background: #987000;
+}
+.buttons .circle:nth-child(3) {
+  background: #18CF37;
+}
+.buttons .circle:nth-child(3):hover {
+  background: #0d741f;
+}
+.menu {
+  width: 100%;
+  height: 600px;
+  background: rgba(0, 0, 0, 0.75);
+}
+.menu .active {
+  background: rgba(255, 255, 255, 0.1);
+}
+.menu .row:hover {
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+.menu .profile p:first-of-type {
+  padding: 8px 0 0 0;
+}
+.menu .profile p:last-of-type {
+  color: rgba(255, 255, 255, 0.3);
+  padding: 5px 0 0 0;
+  margin-bottom: 20px;
+}
+.menu .profile img {
+  border-radius: 4px;
+  margin: 5px 10px 10px 20px;
+  float: left;
+}
+.right-top {
+  height: 40px;
+  position: relative;
+  background: linear-gradient(180deg, #F5F5F5 10%, #E9E9E9 90%);
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  border-bottom: 1px solid #d3d3d3;
+}
+.right-top .title {
+  font-weight: 600;
+  padding: 12px;
+}
+.right {
+  float: left;
+  width: 70%;
+  color: #333;
+}
+.feed {
+  height: 600px;
+  background: white;
+}
+.feed .post {
+  padding: 15px;
+}
+.feed .post p {
+  padding: 0;
+  margin-bottom: 10px;
+}
+.feed .post p small {
+  font-size: 13px;
+  font-weight: 400;
+}
+.feed .post .time {
+  float: right;
+  color: #CCC;
+  font-size: 13px;
+}
+.feed .post .name {
+  font-weight: 600;
+}
+.feed .post .text {
+  font-size: 14px;
+}
+.feed .post img {
+  margin-right: 10px;
+  border-radius: 4px;
+  float: left;
+}
